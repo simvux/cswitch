@@ -1,0 +1,23 @@
+source_container: /home/simon/.cswitch/
+run_after:
+ - "lossless-spectrwm-restart"
+configs:
+
+ - identifier: "light"
+   dotfiles:
+    - source: "alacritty-light.yml"
+      destin: "/home/simon/.config/alacritty/alacritty.yml"
+    - source: "spectrwm-light.conf"
+      destin: "/home/simon/.spectrwm.conf"
+
+ - identifier: "dark"
+   dotfiles:
+    - source: "alacritty-dark.yml"
+      destin: "/home/simon/.config/alacritty/alacritty.yml"
+    - source: "spectrwm-dark.conf"
+      destin: "/home/simon/.spectrwm.conf"
+
+ - identifier: "wayland"
+   dotfiles:
+    - source: "alacritty-wayland.yml"
+      destin: "/home/simon/.config/alacritty/alacritty.yml"
